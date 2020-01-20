@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://codepen.io/normalgreetings/pen/wvBQEoj.css">
+</head>
+
+<body>
+
+  
+    <div class="page-wrap" style="display: none;">
+
+          <img class="ass" src="https://i.imgur.com/094xf7a.png">
+      
+      
+      
+      
+  </div>
+
+  <div class="mature-content-warning">
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Mature Content Warning</h4>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Are you 18 yrs old?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success continue" data-dismiss="modal">Yes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </div>
+
+  <!-- vendors -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $(window).on('load', function() {
+        $('#myModal').modal('show');
+      });
+
+      $('.continue').on('click', function() {
+        $('.mature-content-warning').css('display', 'none');
+        $('.page-wrap').fadeIn();
+      });
+
+    });
+  </script>
+  
+</body>
+  
+</html>
